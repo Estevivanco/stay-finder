@@ -29,3 +29,6 @@ lerna-debug.log*
 
 # build output
 dist/
+
+# course material (keep local)
+assignment.md
