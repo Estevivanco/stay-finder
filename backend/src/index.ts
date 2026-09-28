@@ -1,5 +1,6 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
+import { env } from './env.js'
 import propertiesRoute from './routes/properties.js'
 import bookingApp from './routes/bookings.js'
 
@@ -27,7 +28,7 @@ app.route('/bookings', bookingApp)
 
 serve({
   fetch: app.fetch,
-  port: 4000
+  port: env.honoPort
 }, (info) => {
   console.log(`Server is running on http://localhost:${info.port}`)
 })

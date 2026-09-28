@@ -1,15 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
-
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_SECRET_KEY;
-
-if (!supabaseUrl || !supabaseKey) {
-  throw new Error(
-    "Missing SUPABASE_URL or SUPABASE_SECRET_KEY. Add them to backend/.env (see .env.example)."
-  );
-}
+import { env } from "../env.js";
 
 // Secret key: används bara i backend, går förbi RLS
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = createClient(env.supabaseUrl, env.supabaseKey);
 
 export default supabase;
