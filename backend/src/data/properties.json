@@ -1,0 +1,26 @@
+[
+  {
+    "property_id": "1",
+    "title": "Mysig stuga vid sjön",
+    "description": "En liten röd stuga med egen brygga och bastu.",
+    "location": "Dalarna",
+    "price_per_night": 950,
+    "max_guests": 4
+  },
+  {
+    "property_id": "2",
+    "title": "Lägenhet i centrala Stockholm",
+    "description": "Ljus tvåa nära tunnelbana, restauranger och Gamla stan.",
+    "location": "Stockholm",
+    "price_per_night": 1400,
+    "max_guests": 3
+  },
+  {
+    "property_id": "3",
+    "title": "Strandhus på västkusten",
+    "description": "Rymligt hus med havsutsikt och stor altan.",
+    "location": "Göteborg",
+    "price_per_night": 2100,
+    "max_guests": 6
+  }
+]
