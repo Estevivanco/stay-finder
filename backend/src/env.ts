@@ -14,6 +14,6 @@ function getEnv(key: string): string {
 
 export const env = {
   supabaseUrl: getEnv("SUPABASE_URL"),
-  supabaseKey: getEnv("SUPABASE_SECRET_KEY"),
-  honoPort: Number(process.env.HONO_PORT) || 4000
+  supabaseKey: getEnv("SUPABASE_KEY"),
+  honoPort: Number(process.env.HONO_PORT) || 3000
 };
