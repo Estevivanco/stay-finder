@@ -11,7 +11,7 @@ type MessageResponse = {
 const app = new Hono()
 
 app.get('/', (c) => {
-  return c.text('Hello Hono! Backend is running. :)')
+  return c.text('StayFinder API')
 })
 
 app.get("/api/message", (c) => {
